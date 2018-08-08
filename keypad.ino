@@ -39,7 +39,7 @@ void loop() {
       digitalWrite(outputPins[row],HIGH); // set the ROW back to HIGH
      }
   } 
-  else   { // wait for the key to be released
+  else   { // check if the key was released
     for(int row=0; row<4; row++) digitalWrite(outputPins[row],LOW); // set all rows to LOW in the case 2 or more keys are pressed at the same time          
     pressed=0;
     for(int col=0; col<4; col++) // checks if one or more keys are pressed
